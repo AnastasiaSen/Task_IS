@@ -11,11 +11,6 @@ import static java.lang.Math.abs;
 
 public class Main {
 
-    private static ArrayList<String> words = new ArrayList<>() {{
-        add("transparent");
-        add("volatile");
-    }};
-
     //task #1
     public static int gcd(int a, int b)
     {
