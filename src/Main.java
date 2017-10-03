@@ -10,11 +10,16 @@ import java.util.stream.Stream;
 import static java.lang.Math.abs;
 
 public class Main {
+    private static String folder = "C:\\java";
+    private static ArrayList<String> keyWord = new ArrayList() {{
+        add("transparent");
+        add("volatile");
+    }};
 
-    public static void main(String[] args){
+        public static void main(String[] args){
         //task1
         System.out.println("Task #1");
-        System.out.println(Task1.gcd(-100, -10) +"\n" +Task1.gcdfloorMod(-100, -10) +"\n" +Task1.gcdRem(-100,-10));
+        System.out.println(Task1.gcd(100, -10) +"\n" +Task1.gcdfloorMod(100, -10) +"\n" +Task1.gcdRem(100,-10));
 
         //task2
         System.out.println("Task #2");
@@ -29,12 +34,12 @@ public class Main {
         Task4.ScannerToStream();
 
         //task5
-        System.out.println("Task #5");
-
+        //System.out.println("Task #5");
+        //Task5.FindKeyWord(folder, keyWord);
 
         //task6
         System.out.println("Task #6");
-
+        Task6.FindChar("Words.txt");
 
         //task7
         System.out.println("Task #7");
