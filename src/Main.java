@@ -19,6 +19,10 @@ public class Main {
         //task2
         System.out.println("Task #2");
         Task2.Rot13("The five boxing wizards jump quickly");
+
+        //task3
+        System.out.println("Task #3");
+        System.out.println(Task3.hexToDecConvert("4EA"));
     }
 
 }
