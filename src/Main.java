@@ -11,27 +11,9 @@ import static java.lang.Math.abs;
 
 public class Main {
 
-    //task #1
-    public static int gcd(int a, int b)
-    {
-        if (b == 0) return a;
-        return gcd(abs(b), a % b);
+    public static void main(String[] args){
+        //task1
+        System.out.println(Task1.gcd(-100, -10) +"\n" +Task1.gcdfloorMod(-100, -10) +"\n" +Task1.gcdRem(-100,-10));
     }
 
-    public static int gcdfloorMod(int a, int b) {
-        if (b == 0) return a;
-        return gcdfloorMod(abs(b), Math.floorMod(a,b));
-    }
-    public static int gcdRem(int a, int b) {
-        if (b == 0) return a;
-        return gcdfloorMod(b, rem(a,b));
-    }
-    private static int rem(int a, int b){
-        a = abs(a);
-        b = abs(b);
-        while (a > b){
-            a -= b;
-        }
-        return a;
-    }
 }
