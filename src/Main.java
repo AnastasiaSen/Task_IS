@@ -23,6 +23,32 @@ public class Main {
         //task3
         System.out.println("Task #3");
         System.out.println(Task3.hexToDecConvert("4EA"));
-    }
 
+        //task4
+        System.out.println("Task #4");
+        Task4.ScannerToStream();
+
+        //task5
+        System.out.println("Task #5");
+
+
+        //task6
+        System.out.println("Task #6");
+
+
+        //task7
+        System.out.println("Task #7");
+
+
+        //task8
+        System.out.println("Task #8");
+
+
+        //task9
+        System.out.println("Task #9");
+
+
+        //task10
+        System.out.println("Task #10");
+    }
 }
