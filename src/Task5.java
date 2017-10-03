@@ -11,8 +11,7 @@ public class Task5 {
     public static  void FindKeyWord(String Folder, ArrayList<String> keyWord){
         Path pathRoot = Paths.get(Folder);
         try (Stream<Path> fileStream = Files.walk(pathRoot).filter(Files::isRegularFile)){
-            fileStream.forEach((file)->
-            {
+            fileStream.forEach((file)-> {
                 try (Stream<String> lines = Files.lines(file, Charset.forName("UTF-8"))){
                     if(lines.anyMatch(l -> checkStrForWord(l, keyWord))) System.out.println(file);
                 } catch (IOException e) {e.printStackTrace();}

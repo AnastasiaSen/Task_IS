@@ -34,8 +34,8 @@ public class Main {
         Task4.ScannerToStream();
 
         //task5
-        //System.out.println("Task #5");
-        //Task5.FindKeyWord(folder, keyWord);
+        System.out.println("Task #5");
+        Task5.FindKeyWord(folder, keyWord);
 
         //task6
         System.out.println("Task #6");
