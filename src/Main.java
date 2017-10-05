@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 import static java.lang.Math.abs;
 
 public class Main {
-    private static String folder = "C:\\java";
+    private static String folder = "C://Nastya/java";
     private static ArrayList<String> keyWord = new ArrayList() {{
         add("transparent");
         add("volatile");
@@ -34,18 +34,16 @@ public class Main {
         Task4.ScannerToStream();
 
         //task5
-        /*System.out.println("Task #5");
-        try {Task5.unZIP();} catch (IOException e) { e.printStackTrace();}
-        try {Task5.search();} catch (IOException e) {e.printStackTrace();}*/
-        //Task5.FindKeyWord(folder, keyWord);
+        System.out.println("Task #5");
+        Task5.FindKeyWord(folder, keyWord);
 
         //task6
-        /*System.out.println("Task #6");
+        System.out.println("Task #6");
         Task6.FindChar("Words.txt");
 
         //task7
         System.out.println("Task #7");
-        Task7.ReadFile();*/
+        Task7.ReadFile();
 
         //task8
         System.out.println("Task #8");
@@ -53,10 +51,10 @@ public class Main {
 
         //task9
         System.out.println("Task #9");
-        System.out.println(Task9.zip(Stream.of("5","3","35"),Stream.of("99", "7")).skip(1).findFirst().get());
-
+        Task9.AlternateStreams();
 
         //task10
-        System.out.println("Task #10");
+        //System.out.println("Task #10");
+            //хз
     }
 }
